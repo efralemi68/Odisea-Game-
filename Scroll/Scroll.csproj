@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C892555-086A-4F0A-9781-B086DEBB97AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Scroll</RootNamespace>
+    <AssemblyName>Scroll</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Layer.cs" />
+    <Compile Include="MAIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MAIN.Designer.cs">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Map.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sprite.cs" />
+    <EmbeddedResource Include="MAIN.resx">
+      <DependentUpon>MAIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DINO_00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DINO_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileSS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tileSSS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TILER.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_CHOMPS_.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coimp.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\best.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KIRBY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KIRBY_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SPRITE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Walk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\33Ho.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fence.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ola3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pink_bush2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rectangle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocks1_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\seaweed.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tile52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trees1_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trees2_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trees2_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wood.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wood02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngwing.com.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification-triple-tone.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification-try-again.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\indian-ocean-distant-rumble.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Notification-knock-knock.WAV" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\412843__inspectorj__boiling-water-large-a.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\344521__jeremysykes__coin04.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
